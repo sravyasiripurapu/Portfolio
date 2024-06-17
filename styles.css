@@ -358,4 +358,10 @@ form input, form textarea {
     text-align: center;
 
 }
+#msg{
+    color:#fff;
+    margin-top: 10px;
+    font-size: 12px;
+    display: block;
 
+}
