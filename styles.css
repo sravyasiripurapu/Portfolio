@@ -54,7 +54,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #fff;
+    background: #d5e74f;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -78,7 +78,7 @@ nav ul li a:hover::after{
 }
 .intro p span{
     font-size: 40px;
-    color: #cde135;
+    color: #d5e74f;
     margin-top: 200px;
     font-style: italic;
     font-weight: bold;    
@@ -90,7 +90,7 @@ nav ul li a:hover::after{
 }
 /*   --------About Me---------- */
 #About{
-    padding: 30px 0;
+    padding: 50px 0;
     
 
 }
@@ -178,13 +178,13 @@ nav ul li a:hover::after{
 /* -------- Technologies ---------*/
 
 #Services {
-    padding: 50px 0px ;
+    padding: 30px 0px ;
 
 }
 #sub-title {
     font-size: 35px;
     border: 50px;
-    margin-top: 5pxpx;
+    
 }
 .services-list {
     font-size: 20px;
@@ -227,7 +227,7 @@ nav ul li a:hover::after{
 .project-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 40px;    
+    gap: 5px;    
     transition: transform 0.5s;
     text-align: center;
 }
@@ -370,4 +370,69 @@ form input, form textarea {
     font-size: 12px;
     display: block;
 
+}
+/*----------------- Small Screen -------------------*/
+nav .bx{
+    display: none;
+    color: #fff;
+}
+
+@media only screen and (max-width:600px){
+    .intro {
+        margin-top: 30%;
+        font-size: 16px;
+    }
+    .intro p{
+        font-size: 30px;
+    }
+    nav .bx{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #d5e74f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .bx{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+    .row{
+        font-size: 40px;
+    }
+    .col1, .col2{
+        flex-basis: 100%;
+
+    }
+    .col1{
+        margin-bottom: 30px;
+
+    }
+    .col2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        margin-top: 15px;
+    }
+
+    
 }
